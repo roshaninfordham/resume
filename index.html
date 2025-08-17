@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshan Sharma | MS in Information Technology Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,6 +29,19 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
+        .skill-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem; /* 40px */
+            color: #475569; /* slate-600 */
+            margin: 0.5rem;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .skill-icon:hover {
+            transform: scale(1.2);
+            color: #3b82f6; /* blue-500 */
+        }
         .skill-tag {
             display: inline-block;
             background-color: #eef2ff; /* indigo-50 */
@@ -37,17 +51,6 @@
             font-weight: 500;
             font-size: 0.875rem;
             margin: 0.25rem;
-        }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        .loader {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-left-color: #3b82f6; /* blue-500 */
-            border-radius: 50%;
-            width: 2rem;
-            height: 2rem;
-            animation: spin 1s linear infinite;
         }
     </style>
 </head>
@@ -61,18 +64,18 @@
             </div>
             <div>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Roshan Sharma</h1>
-                <p class="mt-2 text-xl md:text-2xl font-medium gradient-text">MS in Information Technology</p>
+                <p class="mt-2 text-xl md:text-2xl font-medium gradient-text">MS in IT @ Fordham | AI/ML Certified @ IIT Jodhpur</p>
                 <p class="mt-4 text-lg text-slate-600">
                     A forward-thinking IT professional blending a deep-rooted understanding of engineering with advanced expertise in Cloud Computing, Cybersecurity, and AI. Passionate about leveraging technology to solve complex problems and drive business success.
                 </p>
                 <div class="mt-6 flex items-center gap-4">
-                    <a href="https://www.linkedin.com/in/roshansharmaofficial" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">
+                    <a href="https://www.linkedin.com/in/roshansharmaofficial" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors" title="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a href="mailto:rs127@fordham.edu" class="text-slate-500 hover:text-blue-600 transition-colors">
+                    <a href="mailto:rs127@fordham.edu" class="text-slate-500 hover:text-blue-600 transition-colors" title="Email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-21.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
                     </a>
-                    <a href="tel:347-937-8232" class="text-slate-500 hover:text-blue-600 transition-colors">
+                    <a href="tel:347-937-8232" class="text-slate-500 hover:text-blue-600 transition-colors" title="Phone">
                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.028-3.493-6.817-2.105 1.029c-1.892.922-2.844 2.821-2.274 4.667 1.143 3.703 5.38 12.423 11.956 12.423.233 0 .469-.018.703-.054 2.503-.389 4.144-2.587 3.22-4.935l-2.102-1.028z"/></svg>
                     </a>
                 </div>
@@ -81,25 +84,17 @@
     </header>
 
     <main class="container mx-auto max-w-5xl px-4">
-        <!-- AI Fit Analysis Section -->
+        <!-- Compact Call to Action Section -->
         <section id="ai-fit" class="mb-16 md:mb-24">
-            <div class="card p-6 md:p-8 border-t-4 border-blue-500">
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 text-center">Why I'm a Great Fit for Your Company</h2>
-                <p class="mt-2 text-center text-slate-600 max-w-2xl mx-auto">
-                    Recruiters, find out exactly how I can bring value to your team. Enter a role and job description below to see a customized analysis of my qualifications.
+            <div class="card p-6 md:p-8 border-t-4 border-blue-500 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">See How I Fit Your Role</h2>
+                <p class="mt-2 text-slate-600 max-w-2xl mx-auto">
+                    Have a specific role in mind? Let's connect! I can provide a detailed analysis of how my skills align with your job description.
                 </p>
-                <div class="mt-8 max-w-3xl mx-auto">
-                    <div class="grid grid-cols-1 gap-4">
-                        <input id="roleTitle" type="text" placeholder="Enter Role Title (e.g., Cloud Security Analyst)" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
-                        <textarea id="jobDescription" rows="6" placeholder="Paste the full job description here..." class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"></textarea>
-                        <button id="analyzeBtn" onclick="handleAnalysis()" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 flex items-center justify-center gap-2">
-                            <span id="btn-text">Analyze Fit</span>
-                            <div id="loader" class="loader hidden"></div>
-                        </button>
-                    </div>
-                </div>
-                <div id="analysisResult" class="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200 hidden">
-                    <!-- AI response will be injected here -->
+                <div class="mt-6">
+                    <a href="mailto:rs127@fordham.edu?subject=Role%20Fit%20Analysis%20Request" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 inline-block">
+                        Request a Role-Fit Analysis
+                    </a>
                 </div>
             </div>
         </section>
@@ -169,9 +164,9 @@
                     <p class="text-sm text-slate-400">Expected Dec 2025 | New York, NY</p>
                 </div>
                 <div class="card p-6">
-                    <h3 class="font-bold text-lg text-slate-800">Indian Institute of Technology (IIT J)</h3>
+                    <h3 class="font-bold text-lg text-slate-800">Indian Institute of Technology (IIT Jodhpur)</h3>
                     <p class="text-blue-600 font-semibold">PGC, Machine Learning & AI (GPA: 3.6)</p>
-                     <p class="text-sm text-slate-400">India</p>
+                     <p class="text-sm text-slate-400">Jodhpur, India</p>
                 </div>
                  <div class="card p-6 md:col-span-2">
                     <h3 class="font-bold text-lg text-slate-800">Pondicherry University</h3>
@@ -217,21 +212,39 @@
             <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Technical Skills</h2>
             <div class="card p-8">
                 <div class="mb-6">
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Programming Languages</h3>
-                    <div class="flex flex-wrap">
-                        <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C++</span><span class="skill-tag">C</span><span class="skill-tag">MATLAB</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">VHDL</span><span class="skill-tag">Embedded C</span>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2 text-center">Programming Languages</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <i class="devicon-python-plain skill-icon" title="Python"></i>
+                        <i class="devicon-java-plain skill-icon" title="Java"></i>
+                        <i class="devicon-cplusplus-plain skill-icon" title="C++"></i>
+                        <i class="devicon-c-plain skill-icon" title="C"></i>
+                        <i class="devicon-matlab-plain skill-icon" title="MATLAB"></i>
+                        <i class="devicon-html5-plain skill-icon" title="HTML5"></i>
+                        <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
                     </div>
                 </div>
                  <div class="mb-6">
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Technical Tools</h3>
-                    <div class="flex flex-wrap">
-                        <span class="skill-tag">UiPath</span><span class="skill-tag">BluePrism</span><span class="skill-tag">Arduino</span><span class="skill-tag">Git</span><span class="skill-tag">Wireshark</span><span class="skill-tag">Weka</span><span class="skill-tag">PROTEUS</span><span class="skill-tag">SatDump</span><span class="skill-tag">GNU Radio</span>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2 text-center">Tools & Platforms</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <i class="devicon-googlecloud-plain skill-icon" title="Google Cloud Platform (GCP)"></i>
+                        <i class="devicon-amazonwebservices-original skill-icon" title="Amazon Web Services (AWS)"></i>
+                        <i class="devicon-git-plain skill-icon" title="Git"></i>
+                        <i class="devicon-arduino-plain skill-icon" title="Arduino"></i>
+                        <i class="devicon-embeddedc-plain skill-icon" title="Embedded C"></i>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Technical Concepts</h3>
-                    <div class="flex flex-wrap">
-                        <span class="skill-tag">Cloud Computing</span><span class="skill-tag">GCP</span><span class="skill-tag">AWS</span><span class="skill-tag">Cybersecurity</span><span class="skill-tag">Cloud Security</span><span class="skill-tag">RPA</span><span class="skill-tag">Data Science</span><span class="skill-tag">Web Development</span><span class="skill-tag">IT Strategy</span><span class="skill-tag">Project Management</span><span class="skill-tag">VLSI SoC Design</span>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2 text-center">Concepts & Methodologies</h3>
+                     <div class="flex flex-wrap justify-center">
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">Cloud Security</span>
+                        <span class="skill-tag">RPA (UiPath, BluePrism)</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">IT Strategy</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">VLSI SoC Design</span>
                     </div>
                 </div>
             </div>
@@ -245,13 +258,13 @@
             <h2 class="text-3xl font-bold">Let's Connect!</h2>
             <p class="mt-4 max-w-xl mx-auto text-slate-300">I am actively seeking internship and full-time opportunities where I can make a tangible impact. If my skills and passion align with your team's goals, I would be delighted to connect.</p>
              <div class="mt-8 flex justify-center items-center gap-6">
-                <a href="https://www.linkedin.com/in/roshansharmaofficial" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/roshansharmaofficial" target="_blank" class="text-slate-300 hover:text-white transition-colors" title="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
-                <a href="mailto:rs127@fordham.edu" class="text-slate-300 hover:text-white transition-colors">
+                <a href="mailto:rs127@fordham.edu" class="text-slate-300 hover:text-white transition-colors" title="Email">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-21.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
                 </a>
-                <a href="tel:347-937-8232" class="text-slate-300 hover:text-white transition-colors">
+                <a href="tel:347-937-8232" class="text-slate-300 hover:text-white transition-colors" title="Phone">
                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.028-3.493-6.817-2.105 1.029c-1.892.922-2.844 2.821-2.274 4.667 1.143 3.703 5.38 12.423 11.956 12.423.233 0 .469-.018.703-.054 2.503-.389 4.144-2.587 3.22-4.935l-2.102-1.028z"/></svg>
                 </a>
             </div>
@@ -261,137 +274,5 @@
         </div>
     </footer>
 
-    <script>
-        // --- Summary of Roshan's Resume for the AI Prompt ---
-        const resumeSummary = `
-            Roshan Sharma is an MS in Information Technology student at Fordham University (GPA 3.9, grad Dec 2025), with a B.Tech in Electronics and Communication Engineering.
-            
-            Key Strengths & Experience:
-            - Cloud Computing: Served as a Teaching Assistant for GCP and AWS at Fordham.
-            - Business Acumen: Drove a 300% ROI as an IT & Social Media Strategist. Coached student startups for the Delhi Government.
-            - AI & RPA: Built an AI app ("Market Plan") using the Gemini API during a UN/Salesforce hackathon. Prototyped a healthcare fraud detection assistant using RPA. Built another AI agent app "CityZen AI" using Gemini and Google Maps API.
-            - Engineering Foundation: Designed a V-Dipole Antenna for NOAA satellite data retrieval with guidance from ISRO. Has experience in VLSI SoC design.
-            - Cybersecurity: Holds a Google Cyber Security Analyst professional certification and an AWS Cloud Security Foundations certification.
-            - Internships: IoT Intern at UniConverge, Data Science Research Intern at Ioncure.
-            
-            Technical Skills:
-            - Languages: Python, Java, C++, C, MATLAB, HTML, CSS, VHDL, Embedded C
-            - Tools: UiPath, BluePrism, Git, Wireshark, GCP, AWS
-            - Concepts: Cloud Computing, Cybersecurity, Data Science, RPA, IT Strategy, Project Management, VLSI
-        `;
-
-        async function handleAnalysis() {
-            const roleTitle = document.getElementById('roleTitle').value;
-            const jobDescription = document.getElementById('jobDescription').value;
-            const resultDiv = document.getElementById('analysisResult');
-            const analyzeBtn = document.getElementById('analyzeBtn');
-            const btnText = document.getElementById('btn-text');
-            const loader = document.getElementById('loader');
-
-            if (!roleTitle.trim() || !jobDescription.trim()) {
-                resultDiv.innerHTML = '<p class="text-red-600 font-semibold">Please enter both a role title and a job description.</p>';
-                resultDiv.classList.remove('hidden');
-                return;
-            }
-
-            // --- UI update for loading state ---
-            btnText.textContent = 'Analyzing...';
-            loader.classList.remove('hidden');
-            analyzeBtn.disabled = true;
-            resultDiv.classList.add('hidden');
-            
-            const prompt = \`
-                As an expert career coach, analyze Roshan Sharma's capabilities against the following job description. Your goal is to create a compelling and detailed argument for why Roshan is an excellent candidate, even if there are some gaps in experience.
-
-                First, provide a "Fit Score" out of 100% and a brief, one-sentence summary of why he's a strong match.
-
-                Then, create the following sections using Markdown formatting:
-
-                ### Key Strengths Alignment:
-                - Identify 3-4 key requirements from the job description.
-                - For each requirement, directly connect it to a specific project, skill, or experience from Roshan's resume. Use direct quotes or examples from his background. Explain *how* his experience translates to success in this role.
-
-                ### Bridging the Gaps:
-                - Acknowledge potential areas where Roshan's experience might not be a 1-to-1 match.
-                - Reframe these potential weaknesses as strengths. For example, highlight his rapid learning ability (proven by his diverse projects and certifications) as evidence he can quickly master any required skills he currently lacks. Emphasize how his unique engineering background provides a different and valuable perspective.
-
-                ### Long-Term Potential:
-                - Conclude with a strong statement about his long-term value to the company. Focus on his initiative (hackathons, personal projects), blend of business and tech skills, and adaptability.
-
-                Here is Roshan's resume summary:
-                ---
-                \${resumeSummary}
-                ---
-
-                Here is the Job Information provided by the recruiter:
-                ---
-                Role Title: \${roleTitle}
-                Job Description: \${jobDescription}
-                ---
-
-                Generate the response now.
-            \`;
-
-            try {
-                const text = await generateTextWithRetry(prompt);
-                // Simple Markdown to HTML conversion
-                let htmlContent = text
-                    .replace(/### (.*)/g, '<h3 class="text-xl font-bold text-slate-800 mt-4 mb-2">$1</h3>')
-                    .replace(/#### (.*)/g, '<h4 class="text-lg font-semibold text-slate-700 mt-3 mb-1">$1</h4>')
-                    .replace(/\\*\\*([^*]+)\\*\\*/g, '<strong>$1</strong>')
-                    .replace(/\\* ([^*]+)/g, '<li class="ml-5 list-disc">$1</li>')
-                    .replace(/\\n/g, '<br>');
-
-                resultDiv.innerHTML = htmlContent;
-                resultDiv.classList.remove('hidden');
-            } catch (error) {
-                console.error("Error fetching analysis:", error);
-                resultDiv.innerHTML = '<p class="text-red-600 font-semibold">Sorry, an error occurred while analyzing the job description. Please try again later.</p>';
-                resultDiv.classList.remove('hidden');
-            } finally {
-                // --- Revert UI from loading state ---
-                btnText.textContent = 'Analyze Fit';
-                loader.classList.add('hidden');
-                analyzeBtn.disabled = false;
-            }
-        }
-
-        async function generateTextWithRetry(prompt, maxRetries = 3) {
-            const apiKey = ""; // API key is handled by the environment
-            const apiUrl = \`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=\${apiKey}\`;
-            
-            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
-            const payload = { contents: chatHistory };
-
-            for (let i = 0; i < maxRetries; i++) {
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(\`HTTP error! status: \${response.status}\`);
-                    }
-
-                    const result = await response.json();
-                    
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        return result.candidates[0].content.parts[0].text;
-                    } else {
-                         // If the response is valid but empty, throw an error to retry
-                        throw new Error("Invalid response structure from API.");
-                    }
-                } catch (error) {
-                    console.warn(\`Attempt \${i + 1} failed. Retrying in \${Math.pow(2, i)}s...\`);
-                    if (i === maxRetries - 1) throw error;
-                    await new Promise(res => setTimeout(res, Math.pow(2, i) * 1000));
-                }
-            }
-        }
-    </script>
 </body>
 </html>
